@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Tip Calculator</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="contact"><i class="fa-regular fa-envelope"></i></div>
+    <div class="calculator">
+      <div class="header">
+        <h1>Tip Calculator</h1>
+      </div>
+
+      <form>
+        <label for="billTotal">Bill total</label>
+        <div class="bill">
+          <span>$</span>
+          <input
+            type="number"
+            name="billTotal"
+            id="billTotal"
+            onkeyup="calculateBill()"
+            placeholder="100.00"
+          />
+        </div>
+
+        <label for="tip">Tip</label>
+        <div class="bill">
+          <span>%</span>
+          <input
+            type="number"
+            name="tip"
+            id="tip"
+            value=""
+            onkeyup="calculateBill()"
+            placeholder="10.00"
+          />
+        </div>
+      </form>
+
+      <div class="tags">
+        <span>People</span>
+        <span>Total per Person</span>
+      </div>
+
+      <div class="total">
+        <div class="people">
+          <div class="minusBtn"><button id="minus" class="btn">-</button></div>
+          <div class="number">
+            <p>1</p>
+          </div>
+          <div class="plusBtn">
+            <button id="plus" class="btn">+</button>
+          </div>
+        </div>
+
+        <div class="tpp">
+          <span>$</span>
+          <p>110.00</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

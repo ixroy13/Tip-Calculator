@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    color: #fff
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #858BEA;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.calculator {
+    min-width: 60vw;
+    height: 90vh;
+    background: #252236;
+    border-radius: 20px 20px 0 0;
+    padding: 30px;
+}
+
+.header {
+    width: 100%;
+    height: 130px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-size: 160%;
+}
+
+input {
+    /* all: unset; */
+    border: none;;
+    width: 100%;
+    height: 50px;
+    font-size: 150%;
+    background: #323555;
+    border-radius: 500px;
+    margin: 15px 0 ;
+    padding-left: 40px;
+    align-items: center;
+    margin-left: -15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.tags {
+    display: flex;
+    font-size: 140%;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.btn {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: #8187E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.people {
+    display: flex;
+    font-size: 150%;
+    align-items: center;
+}
+
+p {
+    margin: 0 10px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tpp p {
+    font-size: 250%;
+    letter-spacing: 1px;
+}
+
+.tpp {
+    display: flex;
+}
+
+.tpp span {
+    font-size: 250%;
+}
+
+.bill {
+ display: flex;
+}
+
+.bill span { 
+    position: relative;
+    top: 27px;
+    left: 20px;
+    font-size: 150%;
+}
+
+.people div {
+    width: 33.3%;
+}
+
+.people p {
+    min-width: 32px;
+    translate: -2px 2px;
+}
+
+.contact {
+    width: 70px;
+    height: 50px;
+    background: #252236;
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-regular {
+    color: #fff;
+    font-size: 200%;
+}
+
+#minus {
+    position: relative;
+    top: 0%;
+    left: 0;
+}
